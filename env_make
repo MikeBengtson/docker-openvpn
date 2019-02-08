@@ -1,0 +1,4 @@
+OVPN_DATA = "docker-ovpn-volume"
+SERVER_NAME = "vpn.bengtsons.org"
+CLIENT_NAME = "default"
+
