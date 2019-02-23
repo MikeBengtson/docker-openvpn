@@ -18,7 +18,7 @@ pull:
 	docker pull $(NS)/$(REPO):$(VERSION)
 			
 start:
-	docker run -v $(OVPN_DATA):/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN --name $(NAME)-$(INSTANCE) $(NS)/$(REPO):$(VERSION)
+	docker run -v $(OVPN_DATA):/etc/openvpn -d -p 1194:1194/udp --cap-add=NET_ADMIN --name $(NAME)-$(INSTANCE) $(RUN_FLAG) $(NS)/$(REPO):$(VERSION)
 
 stop:
 	docker stop $(NAME)-$(INSTANCE)

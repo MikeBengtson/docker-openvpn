@@ -3,3 +3,4 @@ TIMESTAMP=$(shell date -u +"%FT%H%MZ")
 SERVER_NAME = "vpn.bengtsons.org"
 CLIENT_NAME = "default"
 HOST_BACKUP_DIR = $(HOME)/backup
+RUN_FLAG=--restart unless-stopped 
